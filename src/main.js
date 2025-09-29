@@ -1,10 +1,9 @@
-const cards = document.querySelectorAll(".card");
-for (let card of cards) {
-    card.addEventListener("click", () => {
-        if (card.classList.contains("card-show")) {
-            card.classList.remove("card-show");
-        } else {
-            card.classList.add("card-show");
-        }
-    })
-}
+const card = document.querySelector(".card");
+
+card.addEventListener("click", () => {
+  if (card.classList.contains("card-show")) {
+    card.classList.remove("card-show");
+    } else {
+    card.classList.add("card-show");
+  }
+})
